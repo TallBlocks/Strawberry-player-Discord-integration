@@ -2,6 +2,8 @@
 """
     Imports
 """
+import pyfiglet
+
 from pypresence import Presence # This module will allow us to connect to the Discord's RPC.
 
 from __getInfo__ import getInfo # This will import the getInfo() function from __getInfo__.py
@@ -19,6 +21,10 @@ connectionClose = 1
     EOF
 """
 if __name__ == "__main__":
+    result = pyfiglet.figlet_format("          TallBlocks's Strawberry DC")
+
+    print (result, "https://TallBlocks.github.io")
+
     while True: #Starts the loop.
         getInfo() # It calls to the function getInfo in __getInfo__.py.
 
